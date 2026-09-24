@@ -20,6 +20,6 @@ elif 1 < distance_mi <= 6 and has_bike and not is_raining:
 elif distance_mi > 6 and (has_car or has_ride_share_app):
     print(True)
 
-#  Default: Any other scenario (raining, no bike, etc.)
+#   Any other scenario (raining, no bike, etc.)
 else:
     print(False)
