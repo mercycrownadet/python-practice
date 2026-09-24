@@ -22,11 +22,11 @@ def create_character(name, strength, intelligence, charisma):
     if strength > 4 or intelligence > 4 or charisma > 4:
         return 'All stats should be no more than 4.'
 
-    # Stat sum validation
+    # validate stat sum.
     if strength + intelligence + charisma != 7:
         return 'The character should start with 7 points.'
 
-    # Character visual card generation
+    # The Character's visual card generation
     str_line = 'STR ' + (full_dot * strength) + (empty_dot * (10 - strength))
     int_line = 'INT ' + (full_dot * intelligence) + (empty_dot * (10 - intelligence))
     cha_line = 'CHA ' + (full_dot * charisma) + (empty_dot * (10 - charisma))
