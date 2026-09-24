@@ -1,5 +1,5 @@
 def apply_discount(price, discount):
-    # Just check for numbers, ignore the sneaky boolean edge-case
+    
     if not isinstance(price, (int, float)):
         return "The price should be a number"
     
